@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#cursor{
+    height:20px;
+    width: 20px;
+    background-color: #00778A;
+    border-radius: 50% ;
+    position: fixed;
+    z-index: 99;
+}
+#cursor-blur{
+    height:500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #00788a6b;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 1;
+}
+#nav{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+}
+#nav img{
+    height:220px;
+    width:300px;
+    z-index: 10;
+}
+#nav h4{
+    margin: 40px;
+   font-weight: 600;
+   color: white;
+}
+a{
+    text-decoration: none;
+
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.216);
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 10;
+
+    
+}
+#page1 h1::before{
+    content: "Let's Learn";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke:1px grey;
+    z-index: -1;
+    text-transform: uppercase;
+   
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+}
+#page2 h2{
+    padding: 0 30px;
+    z-index: 12;
+}
+#menu{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    gap: 35px;
+}
+.card{
+    height: 260px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10%;
+    z-index: 12;
+}
+.more{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 12;
+
+}
+#page2 h1{
+    font-size: 40px;
+    font-weight: 200;
+}
+.more:hover{
+    scale: 2;
+    background-color: #00778A;
+    transition: 0.5s;
+}
